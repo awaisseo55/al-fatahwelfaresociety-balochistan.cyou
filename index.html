@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Al Fateh Welfare Society Balochistan — Serving Humanity in Balochistan</title>
+<meta name="description" content="Al Fateh Welfare Society Balochistan is a non-profit welfare organization working for education, clean water, healthcare and food relief across Balochistan, Pakistan.">
+<link rel="canonical" href="https://al-fatahwelfaresociety-balochistan.cyou/">
+<meta property="og:title" content="Al Fateh Welfare Society Balochistan">
+<meta property="og:description" content="Education, clean water, healthcare and food relief for the people of Balochistan.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://al-fatahwelfaresociety-balochistan.cyou/">
+<style>
+  *,*::before,*::after{box-sizing:border-box}
+  :root{
+    --green:#0d6b4f;
+    --green-dark:#07523c;
+    --sand:#f6f3ec;
+    --ink:#1d2321;
+    --muted:#5b6765;
+    --line:#e3ded2;
+  }
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;font-family:"Segoe UI",system-ui,-apple-system,Helvetica,Arial,sans-serif;
+    color:var(--ink);background:#fff;line-height:1.65;-webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block}
+  a{color:var(--green);text-decoration:none}
+  .wrap{width:100%;max-width:1100px;margin:0 auto;padding:0 20px}
+  .btn{
+    display:inline-block;background:var(--green);color:#fff;padding:13px 26px;border-radius:999px;
+    font-weight:600;border:0;cursor:pointer;font-size:1rem;transition:background .2s,transform .2s;
+  }
+  .btn:hover{background:var(--green-dark);transform:translateY(-1px)}
+  .btn.ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.75)}
+  .btn.ghost:hover{background:rgba(255,255,255,.14)}
+
+  /* header */
+  header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.95);
+    backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 20px;
+    max-width:1100px;margin:0 auto;flex-wrap:wrap}
+  .brand{display:flex;align-items:center;gap:12px;font-weight:700;color:var(--ink);font-size:1.02rem;line-height:1.25}
+  .mark{width:40px;height:40px;flex:0 0 40px;border-radius:10px;background:var(--green);color:#fff;
+    display:grid;place-items:center;font-weight:800;letter-spacing:.5px}
+  .brand small{display:block;font-weight:500;color:var(--muted);font-size:.74rem;letter-spacing:.06em;text-transform:uppercase}
+  nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+  nav a{color:var(--muted);font-size:.95rem;font-weight:500}
+  nav a:hover{color:var(--green)}
+
+  /* hero */
+  .hero{position:relative;min-height:70vh;display:grid;place-items:center;text-align:center;color:#fff;
+    background:linear-gradient(rgba(7,40,31,.72),rgba(7,40,31,.72)),
+      url("https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1600&q=70") center/cover no-repeat}
+  .hero .wrap{padding:90px 20px}
+  .hero h1{font-size:clamp(2rem,5vw,3.3rem);margin:0 0 16px;line-height:1.15;font-weight:800}
+  .hero p{font-size:clamp(1rem,2vw,1.18rem);max-width:640px;margin:0 auto 28px;color:#eaf1ee}
+  .hero .btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+  .tag{display:inline-block;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;
+    background:rgba(255,255,255,.15);padding:7px 15px;border-radius:999px;margin-bottom:20px}
+
+  /* sections */
+  section{padding:72px 0}
+  .alt{background:var(--sand)}
+  h2{font-size:clamp(1.5rem,3.2vw,2.1rem);margin:0 0 12px;font-weight:800}
+  .lead{color:var(--muted);max-width:640px;margin:0 0 36px}
+  .center{text-align:center}
+  .center .lead{margin:0 auto 36px}
+
+  .grid{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+  .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:26px}
+  .card .ico{font-size:1.7rem;margin-bottom:10px}
+  .card h3{margin:0 0 8px;font-size:1.1rem}
+  .card p{margin:0;color:var(--muted);font-size:.95rem}
+
+  .split{display:grid;gap:40px;grid-template-columns:1.05fr 1fr;align-items:center}
+  .split img{border-radius:16px;height:100%;min-height:300px;object-fit:cover}
+
+  .stats{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));text-align:center}
+  .stat b{display:block;font-size:2rem;color:var(--green);line-height:1.1}
+  .stat span{color:var(--muted);font-size:.9rem}
+
+  /* contact */
+  .contact-grid{display:grid;gap:40px;grid-template-columns:1fr 1fr}
+  form{display:grid;gap:14px}
+  label{font-size:.88rem;font-weight:600}
+  input,textarea{
+    width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:10px;
+    font:inherit;background:#fff;color:inherit
+  }
+  input:focus,textarea:focus{outline:2px solid var(--green);outline-offset:1px;border-color:var(--green)}
+  textarea{resize:vertical;min-height:120px}
+  .note{font-size:.84rem;color:var(--muted);margin:4px 0 0}
+  .info-list{list-style:none;margin:0;padding:0;display:grid;gap:18px}
+  .info-list li{display:flex;gap:14px;align-items:flex-start}
+  .info-list .ico{font-size:1.2rem;line-height:1.4}
+  .info-list strong{display:block;font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:700}
+
+  footer{background:var(--green-dark);color:#cfe3db;padding:34px 0;font-size:.9rem}
+  .foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center}
+  footer a{color:#fff}
+
+  @media (max-width:800px){
+    .split,.contact-grid{grid-template-columns:1fr}
+    .split img{min-height:220px}
+    nav ul{gap:16px}
+    section{padding:56px 0}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a class="brand" href="#top">
+      <span class="mark">AF</span>
+      <span>Al Fateh Welfare Society
+        <small>Balochistan</small>
+      </span>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Our Work</a></li>
+        <li><a href="#impact">Impact</a></li>
+        <li><a href="#help">Get Involved</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" style="padding:0">
+    <div class="wrap">
+      <span class="tag">Non-profit · Balochistan, Pakistan</span>
+      <h1>Serving humanity across Balochistan</h1>
+      <p>Al Fateh Welfare Society Balochistan works with rural and under-served communities
+         to provide education, clean drinking water, healthcare and emergency food relief.</p>
+      <div class="btns">
+        <a class="btn" href="#contact">Get Involved</a>
+        <a class="btn ghost" href="#work">See Our Work</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrap split">
+      <div>
+        <h2>Who we are</h2>
+        <p class="lead">A volunteer-driven welfare society founded to stand beside the people of Balochistan.</p>
+        <p>Balochistan is Pakistan's largest province by area and one of its most under-served.
+           Entire villages live without a school, a clinic, or a safe source of drinking water.
+           Al Fateh Welfare Society Balochistan was formed by local volunteers to close that gap
+           — one village, one family, one child at a time.</p>
+        <p>We work directly with community elders and local volunteers, so every rupee donated
+           reaches the families who need it most. Our work is transparent, non-political and
+           open to all, regardless of background.</p>
+        <p><a href="#contact"><strong>Partner with us →</strong></a></p>
+      </div>
+      <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=900&q=70"
+           alt="Volunteers packing relief supplies for distribution">
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section id="work" class="alt">
+    <div class="wrap center">
+      <h2>What we do</h2>
+      <p class="lead">Four focus areas, chosen by the communities we serve.</p>
+      <div class="grid" style="text-align:left">
+        <div class="card">
+          <div class="ico">📚</div>
+          <h3>Education Support</h3>
+          <p>School fees, books, uniforms and stationery for children from low-income families,
+             plus support for community learning centres.</p>
+        </div>
+        <div class="card">
+          <div class="ico">💧</div>
+          <h3>Clean Water</h3>
+          <p>Hand pumps, water filtration units and water tanks for villages that rely on
+             unsafe or distant water sources.</p>
+        </div>
+        <div class="card">
+          <div class="ico">🩺</div>
+          <h3>Health Camps</h3>
+          <p>Free medical camps, medicines, and help with treatment and transport costs for
+             patients who cannot afford care.</p>
+        </div>
+        <div class="card">
+          <div class="ico">🍚</div>
+          <h3>Food &amp; Relief</h3>
+          <p>Monthly ration packs for widows and orphans, Ramadan and Eid distributions, and
+             emergency relief during floods and droughts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPACT -->
+  <section id="impact">
+    <div class="wrap center">
+      <h2>Our impact so far</h2>
+      <p class="lead">Numbers from our ongoing community programmes.</p>
+      <div class="stats">
+        <div class="stat"><b>2,500+</b><span>Families supported</span></div>
+        <div class="stat"><b>40+</b><span>Villages reached</span></div>
+        <div class="stat"><b>18</b><span>Water projects</span></div>
+        <div class="stat"><b>120+</b><span>Active volunteers</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW YOU CAN HELP -->
+  <section id="help" class="alt">
+    <div class="wrap center">
+      <h2>How you can help</h2>
+      <p class="lead">Every contribution — big or small, money or time — reaches a family in need.</p>
+      <div class="grid" style="text-align:left">
+        <div class="card">
+          <div class="ico">🤝</div>
+          <h3>Become a volunteer</h3>
+          <p>Join a distribution drive, help at a medical camp, or teach at a community
+             learning centre. A few hours a month makes a real difference.</p>
+        </div>
+        <div class="card">
+          <div class="ico">💚</div>
+          <h3>Sponsor a family</h3>
+          <p>Cover a monthly ration pack for a widow or orphan household, or a child's school
+             fees and books for a full year.</p>
+        </div>
+        <div class="card">
+          <div class="ico">📣</div>
+          <h3>Spread the word</h3>
+          <p>Share our work with your family, friends and community. Awareness brings the
+             supporters and partners that keep our projects running.</p>
+        </div>
+      </div>
+      <p style="margin-top:32px">
+        <a class="btn" href="#contact">Talk to our team</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact-grid">
+        <div>
+          <h2>Contact us</h2>
+          <p class="lead">Want to volunteer, donate, or request help for your village?
+             Reach out — we reply to every message.</p>
+          <ul class="info-list">
+            <li><span class="ico">📍</span><div><strong>Office</strong>Quetta, Balochistan, Pakistan</div></li>
+            <li><span class="ico">📞</span><div><strong>Phone / WhatsApp</strong><a href="tel:+923356010162">0335 601 0162</a></div></li>
+            <li><span class="ico">✉️</span><div><strong>Email</strong><a href="mailto:info@al-fatahwelfaresociety-balochistan.cyou">info@al-fatahwelfaresociety-balochistan.cyou</a></div></li>
+            <li><span class="ico">🕘</span><div><strong>Hours</strong>Monday – Saturday, 9:00 AM – 6:00 PM (PKT)</div></li>
+          </ul>
+        </div>
+
+        <div>
+          <form id="contactForm" novalidate>
+            <div>
+              <label for="name">Your name</label>
+              <input id="name" name="name" type="text" placeholder="Full name" required>
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required>
+            </div>
+            <div>
+              <label for="subject">Subject</label>
+              <input id="subject" name="subject" type="text" placeholder="Volunteering, donation, request for help…">
+            </div>
+            <div>
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="How can we help?" required></textarea>
+            </div>
+            <button class="btn" type="submit">Send Message</button>
+            <p class="note" id="formNote">This opens your email app — no server needed.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>© <span id="year">2026</span> Al Fateh Welfare Society Balochistan. All rights reserved.</div>
+    <div>al-fatahwelfaresociety-balochistan.cyou</div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  var EMAIL = 'info@al-fatahwelfaresociety-balochistan.cyou';
+  document.getElementById('contactForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var f = e.target, note = document.getElementById('formNote');
+    if (!f.name.value.trim() || !f.email.value.trim() || !f.message.value.trim()) {
+      note.textContent = 'Please fill in your name, email and message.';
+      note.style.color = '#b3261e';
+      return;
+    }
+    var subject = f.subject.value.trim() || 'Website enquiry';
+    var body = 'Name: ' + f.name.value + '\nEmail: ' + f.email.value + '\n\n' + f.message.value;
+    note.style.color = '';
+    note.textContent = 'Opening your email app…';
+    window.location.href = 'mailto:' + EMAIL +
+      '?subject=' + encodeURIComponent(subject) +
+      '&body=' + encodeURIComponent(body);
+  });
+</script>
+
+</body>
+</html>
